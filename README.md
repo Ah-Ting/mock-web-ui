@@ -2,7 +2,7 @@
 
 This is a simple front-end web application that displays a user data table with a tree menu, a login form, and pagination. It is built using HTML, CSS, JavaScript, and jQuery.
 
-## 🚀 Features
+## Features
 
 - Tree view sidebar (country > city)
 - User data table with View button (prints row data to console)
@@ -13,7 +13,7 @@ This is a simple front-end web application that displays a user data table with 
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 project-folder/
