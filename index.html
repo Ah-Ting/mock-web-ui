@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Info Tree App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <button class="tab-button active" data-tab="home">Home</button>
+      <button class="tab-button" data-tab="profile">Profile</button>
+      <button class="tab-button" data-tab="messages">Messages</button>
+      <button class="tab-button" data-tab="settings">Settings</button>
+    </div>
+
+    <div class="main-content">
+      <div id="home" class="tab-content active">
+        <h2>Home</h2>
+        <div class="home-wrapper">
+          <div class="tree-container">
+            <ul class="tree"></ul>
+          </div>
+
+          <div class="table-container" id="data-table-container">
+            <h3>User Info</h3>
+            <table id="data-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>City</th>
+                  <th>Postcode</th>
+                  <th>Country</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="profile" class="tab-content">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="userid">User ID:</label>
+          <input type="text" id="userid" name="userid" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div id="messages" class="tab-content">
+        <h2>Messages</h2>
+        <p>This is the Messages tab.</p>
+      </div>
+
+      <div id="settings" class="tab-content">
+        <h2>Settings</h2>
+        <p>This is the Settings tab.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #1f2937;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.3s;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.home-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.tree-container {
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(129, 30, 30, 0.1);
+}
+
+.tree {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tree li {
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+.tree li span.node {
+  padding: 6px 10px;
+  display: inline-block;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.tree li.open > ul {
+  display: block;
+}
+
+.tree li > ul {
+  display: none;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.table-container {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.view-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#login-form input,
+#login-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+li.open > .toggle-icon::after {
+  content: "-";
+}
+
+li:not(.open) > .toggle-icon::after {
+  content: "+";
+}
